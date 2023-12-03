@@ -48,7 +48,7 @@
                     </button>
                     <button href="#"
                         className="inline-flex flex-col items-center justify-center py-1 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 rounded-lg sidebar-button"
-                        onclick="showPage2()">
+                        onclick="showPage3()">
                         <div class="ico"> </div>
                         <p class="">Transactions</p>
                     </button>
@@ -103,7 +103,7 @@
 
                 <!-- home  -->
                
-                    <section class="flex flex-col justify-center items-center">
+                    <section class="flex flex-col justify-center items-center" id="page1">
                         <div class="flex flex-col items-center">
                             <div>
                                 <div class="text-center mon">
@@ -158,9 +158,53 @@
                         </div>
                     </section>
 
-                <!-- payment  -->
-                
-                <!-- end payment  -->
+                <!-- transaction  -->
+                        <section style="display: none;" id="page3">
+                            <div>
+                                <h1 class="font-[500] text-[28px] text-center mb-10">TRANSACTIONS</h1>
+                            </div>
+                            <div class="flex justify-between" id="myDIV">
+                                <button class="btn active">All</button>
+                                <button class="btn">Completed</button>
+                                <button class="btn">Pending</button>
+                                <button class="btn">Failed</button>
+                            </div>
+                            <section class="w-[100%] mt-6">
+                                <h2 class="font-[500] text-[20px]">Transaction History</h2>
+                                <div class="w-[100%] mt-4">
+                                    <table class="w-[100%]">
+                                        <thead>
+                                            <tr class="text-left">
+                                                <th>Transaction ID</th>
+                                                <th>Service</th>
+                                                <th>Amount</th>
+                                                <th>Date</th>
+                                                <th>Payer</th>
+                                                <th>Status</th>
+                                                <!-- <th></th> -->
+                                            </tr>
+                                        </thead>
+                                       <tbody>
+                                        <tr class="text-left">
+                                            <td>123soo568e4</td>
+                                            <td>Health Services</td>
+                                            <td>N 4,000</td>
+                                            <td>29/09/2023</td>
+                                            <td>Chidinma Okonkwo</td>
+                                            <td>Failed</td>
+                                            <!-- <td>></td> -->
+                                        </tr>
+                                       </tbody>
+            
+                                        <tr>
+            
+                                        </tr>
+                                    </table>
+                                </div>
+                               
+                            </section>
+                        </section>
+                <!-- end transaction  -->
 
                 
 
@@ -171,6 +215,18 @@
     </div>
 
     <script src="./js/index.js"></script>
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+        </script>
 </body>
 
 </html>
