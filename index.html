@@ -27,8 +27,7 @@
     <div class="flex overflow-x-hidden total">
         <!-- sidebar  -->
         <aside class="hidden md:hidden lg:flex sm:flex-col w-[12%] bg-[#D5D5D5] h-full">
-            <a href="#"
-                class="flex items-center justify-center h-20 w-[100%] hover:bg-purple-500 focus:bg-purple-500">
+            <a href="#" class="flex items-center justify-center h-20 w-[100%] hover:bg-purple-500 focus:bg-purple-500">
                 <img src="./image/image 1.png" alt="">
             </a>
             <div class="flex flex-col justify-between text-black h-[90vh]">
@@ -36,13 +35,12 @@
 
                     <button href="#"
                         className="inline-flex flex-col items-center justify-center py-1 hover:text-white hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 rounded-lg sidebar-button"
-                         onclick="showPage1()">
+                        onclick="showPage1()">
                         <div class="ico"> <img src="../img/dash.png" alt="" class="w-5"></div>
                         <p class="">Overview</p>
                     </button>
                     <button href="#"
-                        className="inline-flex flex-col items-center justify-center py-1 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 rounded-lg sidebar-button"
-                        >
+                        className="inline-flex flex-col items-center justify-center py-1 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 rounded-lg sidebar-button">
                         <div class="ico"> </div>
                         <p class="">Accounts</p>
                     </button>
@@ -53,12 +51,11 @@
                         <p class="">Transactions</p>
                     </button>
                     <button href="#"
-                        className="inline-flex flex-col items-center justify-center py-1 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 rounded-lg sidebar-button"
-                        >
+                        className="inline-flex flex-col items-center justify-center py-1 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 rounded-lg sidebar-button">
                         <div class="ico"> </div>
                         <p class="">Settings</p>
                     </button>
-                  
+
 
 
                 </nav>
@@ -102,113 +99,300 @@
             <main class="overflow-x-hidden p-10">
 
                 <!-- home  -->
-               
-                    <section class="flex flex-col justify-center items-center" id="page1">
-                        <div class="flex flex-col items-center">
-                            <div>
-                                <div class="text-center mon">
-                                    <h1 class="font-[500] text-[40px]">1,096,073</h1>
-                                    <p>Registered Users</p>
-                                </div>
-                                <div style="display: flex; justify-content: flex-end;">
-                                    <button class="text-[#15A362] text-[16px]" >View more</button>
-                                </div>
-                            </div>
-                            <div class="inpp mt-8">
-                                <!-- <i class="icon-bell" style="color: red;"></i> -->
-                                <img src="./image/search.png" alt="" class="w-5">
-                                <input type="text" placeholder="Input details e.g. name, state code">
-                            </div>
-                            <button class="bg-[#15A362] p-2 text-white rounded-lg text-[16px] w-[200px] mt-6">Search Profile</button>
-                            <p>or</p>
-                            <button class="text-[#15A362] text-[16px]">Get Transaction History</button>
-                            <div>
 
+                <section class="flex flex-col justify-center items-center" id="page1" style="display: none;">
+                    <div class="flex flex-col items-center">
+                        <div>
+                            <div class="text-center mon">
+                                <h1 class="font-[500] text-[40px]">1,096,073</h1>
+                                <p>Registered Users</p>
                             </div>
-                           
-                        </div>
-                        <div class="w-full mt-8">
-                            <div class="flex justify-between w-full">
-                                <h2 class="font-[500]">Recent Searches</h2>
+                            <div style="display: flex; justify-content: flex-end;">
                                 <button class="text-[#15A362] text-[16px]">View more</button>
                             </div>
-                            <div class="bg-[#F5F5F5] flex justify-between w-full p-4">
-                                <div>
-                                    <p>Sola Eletu</p>
-                                    <p>Sola Eletu</p>
-                                    <p>Sola Eletu</p>
-                                    <p>Sola Eletu</p>
-                                    <p>Sola Eletu</p>
-                                </div>
-                                <div>
-                                    <p>OYATUE555555</p>
-                                    <p>OYATUE555555</p>
-                                    <p>OYATUE555555</p>
-                                    <p>OYATUE555555</p>
-                                    <p>OYATUE555555</p>
-                                </div>
-                                <div>
-                                    <p>></p>
-                                    <p>></p>
-                                    <p>></p>
-                                    <p>></p>
-                                    <p>></p>
-                                </div>
+                        </div>
+                        <div class="inpp mt-8">
+                            <!-- <i class="icon-bell" style="color: red;"></i> -->
+                            <img src="./image/search.png" alt="" class="w-5">
+                            <input type="text" placeholder="Input details e.g. name, state code">
+                        </div>
+                        <button class="bg-[#15A362] p-2 text-white rounded-lg text-[16px] w-[200px] mt-6">Search
+                            Profile</button>
+                        <p>or</p>
+                        <button class="text-[#15A362] text-[16px]">Get Transaction History</button>
+                        <div>
+
+                        </div>
+
+                    </div>
+                    <div class="w-full mt-8">
+                        <div class="flex justify-between w-full">
+                            <h2 class="font-[500]">Recent Searches</h2>
+                            <button class="text-[#15A362] text-[16px]">View more</button>
+                        </div>
+                        <div class="bg-[#F5F5F5] flex justify-between w-full p-4">
+                            <div>
+                                <p>Sola Eletu</p>
+                                <p>Sola Eletu</p>
+                                <p>Sola Eletu</p>
+                                <p>Sola Eletu</p>
+                                <p>Sola Eletu</p>
+                            </div>
+                            <div>
+                                <p>OYATUE555555</p>
+                                <p>OYATUE555555</p>
+                                <p>OYATUE555555</p>
+                                <p>OYATUE555555</p>
+                                <p>OYATUE555555</p>
+                            </div>
+                            <div>
+                                <p>></p>
+                                <p>></p>
+                                <p>></p>
+                                <p>></p>
+                                <p>></p>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                </section>
+                <!-- end home  -->
+
+                <!-- accounts  -->
+                <section>
+                    <div class="flex justify-between">
+                        <div>
+                            <p>State Code</p>
+                            <h1 class="font-[500]">OYATUE555555</h1>
+                        </div>
+                        <div>
+                            <button class="text-[#15A362] text-[16px]">View Transaction</button>
+                        </div>
+                    </div>
+                    <form action="" class="per">
+                        <div class="mt-10 ">
+                            <div class="border-b border-[#D5D5D5] pb-10">
+                                <h1 class="font-[500]">Personal Information</h1>
+                                <div class="flex">
+                                    <div class="w-1/2">
+                                        <div class="mt-6 flex">
+                                            <p for="" class="w-[20%]">First Name</p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="mt-6 flex">
+                                            <p for="" class="w-[20%]">Last Name</p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="mt-6 flex">
+                                            <p for="" class="w-[20%]">Other Name</p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="mt-6">
+                                            <label for="">Email Address</label>
+                                            <input type="email">
+                                        </div>
+                                        <div class="mt-6 flex">
+                                            <p for="" class="w-[20%]">Nin</p>
+                                            <input type="number">
+                                        </div>
+                                        <div class="mt-6 flex">
+                                            <p for="" class="w-[20%]">Gender</p>
+                                            <select name="" id="">
+                                                <option value=""></option>
+                                                <option value="">Male</option>
+                                                <option value="">Female</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="w-1/2">
+                                        <div class="mt-6 flex">
+                                            <p for="" class="w-[23%]">Occupation</p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="mt-6 flex">
+                                            <p for="" class="w-[23%]">Phone Number</p>
+                                            <input type="number">
+                                        </div>
+                                        <div class="mt-6 flex">
+                                            <p for="" class="w-[23%]">Date of Birth</p>
+                                            <input type="date">
+                                        </div>
+
+                                        <div class="mt-6 flex">
+                                            <p for="" class="w-[23%]">Married Status</p>
+                                            <select name="" id="">
+                                                <option value=""></option>
+                                                <option value="">Single</option>
+                                                <option value="">Married</option>
+                                                <option value="">Divorced</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mt-6 flex">
+                                            <p for="" class="w-[23%]">home Address</p>
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- next of kin  -->
+                            <div class="flex mt-10 border-b border-[#D5D5D5] pb-10">
+                                <div class="w-1/2">
+                                    <h1 class="font-[500]">Next of Kin Details</h1>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Name</p>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Relationship</p>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Phone Number</p>
+                                        <input type="number">
+                                    </div>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Address</p>
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    </div>
+
+                                </div>
+                                <div class="w-1/2 ">
+                                    <h1 class="font-[500]">Relative Details</h1>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Name</p>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Relationship</p>
+                                        <input type="number">
+                                    </div>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Name</p>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Relationship</p>
+                                        <input type="number">
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+                            <!-- bank info  -->
+                            <div class="flex mt-10 border-b border-[#D5D5D5] pb-10">
+                                <div class="w-1/2">
+                                    <h1 class="font-[500]">Bank Information</h1>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Account Name</p>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Bank Name</p>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Account Number</p>
+                                        <input type="number">
+                                    </div>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">BVN</p>
+                                        <input type="number">
+                                    </div>
+
+                                </div>
+                                <div class="w-1/2 ">
+                                    <h1 class="font-[500]">Health Information</h1>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Blood Group</p>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Genotype</p>
+                                        <input type="number">
+                                    </div>
+                                    <div class="mt-6 flex">
+                                        <p for="" class="w-[23%]">Documents</p>
+                                        <input type="text">
+                                    </div>
+                                   
+
+
+
+                                </div>
+                            </div>
+
+                            <!-- security info  -->
+
+                            <div class="flex mt-10">
+                                <div class="w-1/2">
+                                    <h1 class="font-[500]">Security Information</h1>
+                                   <img src="./image/doc.png" alt="">
+
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <!-- end accounts  -->
 
                 <!-- transaction  -->
-                        <section style="display: none;" id="page3">
-                            <div>
-                                <h1 class="font-[500] text-[28px] text-center mb-10">TRANSACTIONS</h1>
-                            </div>
-                            <div class="flex justify-between" id="myDIV">
-                                <button class="btn active">All</button>
-                                <button class="btn">Completed</button>
-                                <button class="btn">Pending</button>
-                                <button class="btn">Failed</button>
-                            </div>
-                            <section class="w-[100%] mt-6">
-                                <h2 class="font-[500] text-[20px]">Transaction History</h2>
-                                <div class="w-[100%] mt-4">
-                                    <table class="w-[100%]">
-                                        <thead>
-                                            <tr class="text-left">
-                                                <th>Transaction ID</th>
-                                                <th>Service</th>
-                                                <th>Amount</th>
-                                                <th>Date</th>
-                                                <th>Payer</th>
-                                                <th>Status</th>
-                                                <!-- <th></th> -->
-                                            </tr>
-                                        </thead>
-                                       <tbody>
-                                        <tr class="text-left">
-                                            <td>123soo568e4</td>
-                                            <td>Health Services</td>
-                                            <td>N 4,000</td>
-                                            <td>29/09/2023</td>
-                                            <td>Chidinma Okonkwo</td>
-                                            <td>Failed</td>
-                                            <!-- <td>></td> -->
-                                        </tr>
-                                       </tbody>
-            
-                                        <tr>
-            
-                                        </tr>
-                                    </table>
-                                </div>
-                               
-                            </section>
-                        </section>
+                <section style="display: none;" id="page3">
+                    <div>
+                        <h1 class="font-[500] text-[28px] text-center mb-10">TRANSACTIONS</h1>
+                    </div>
+                    <div class="flex justify-between" id="myDIV">
+                        <button class="btn active">All</button>
+                        <button class="btn">Completed</button>
+                        <button class="btn">Pending</button>
+                        <button class="btn">Failed</button>
+                    </div>
+                    <section class="w-[100%] mt-6">
+                        <h2 class="font-[500] text-[20px]">Transaction History</h2>
+                        <div class="w-[100%] mt-4">
+                            <table class="w-[100%]">
+                                <thead>
+                                    <tr class="text-left">
+                                        <th>Transaction ID</th>
+                                        <th>Service</th>
+                                        <th>Amount</th>
+                                        <th>Date</th>
+                                        <th>Payer</th>
+                                        <th>Status</th>
+                                        <!-- <th></th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-left">
+                                        <td>123soo568e4</td>
+                                        <td>Health Services</td>
+                                        <td>N 4,000</td>
+                                        <td>29/09/2023</td>
+                                        <td>Chidinma Okonkwo</td>
+                                        <td>Failed</td>
+                                        <!-- <td>></td> -->
+                                    </tr>
+                                </tbody>
+
+                                <tr>
+
+                                </tr>
+                            </table>
+                        </div>
+
+                    </section>
+                </section>
                 <!-- end transaction  -->
 
-                
 
-                
+
+
 
             </main>
         </div>
@@ -220,13 +404,13 @@
         var header = document.getElementById("myDIV");
         var btns = header.getElementsByClassName("btn");
         for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-          });
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
         }
-        </script>
+    </script>
 </body>
 
 </html>

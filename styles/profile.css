@@ -68,3 +68,14 @@
     outline: none;
     /* width: 268px; */
   }
+  .per input, select, textarea{
+    background-color: #F5F5F5;
+    height: 30px;
+    padding: 5px;
+    border: solid 1px #000;
+    border-radius: 8px;
+    width: 300px;
+  }
+  .per label{
+    width: 200px;
+  }
